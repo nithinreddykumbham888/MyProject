@@ -1,6 +1,18 @@
 body{
-background-image: url('./images/Aplha1.jpg');
-background-repeat: no-repeat;
+    /* For width smaller than 400px: */
+background-image: url('./images/Alphasmall.jpg');
 background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
 background-size: cover;
 }
+   /* For width 400px and larger: */
+  @media only screen and (min-width: 400px) {
+    body { 
+       background-image: url('./images/Aplha1.jpg'); 
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+  }
